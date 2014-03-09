@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>YeP Tool Tip Demo</title>
+<style>
+.Phone{
+float:Left;
+width:2%;
+}
+.Phone4{
+float:Left;
+width:3%;
+}
+.Length3{
+width:100%;
+}
+.Length4{
+width:100%;
+}
+.NewLine{
+height:20px;
+width:100%;
+}
+
+</style>
+<link  rel="stylesheet" href="src\css\YePAutoTabbing.css" type="text/css"></link>
+<script src="src\js\jQuery\jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="src\js\YepAutoTabbing.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+$(function(){
+$("#Phone1").YePAutoTabbing({
+ID:['Phone1','Phone2','Phone3'],
+maxLength:[3,3,4]
+});
+$("#Credit1").YePAutoTabbing({
+ID:['Credit1','Credit2','Credit3','Credit4'],
+maxLength:[4,4,4,4]
+});
+});
+</script>
+</head>
+<body>
+<div>
+<div>Phone #</div>
+<div class="Phone"><input id = "Phone1" class="Length3"/></div><span style='float:left;'>-</span>
+<div class="Phone"><input id = "Phone2"  class="Length3"/></div><span style='float:left;'>-</span>
+<div class="Phone4"><input id = "Phone3"  class="Length4"/></div>
+</div>
+<div class="NewLine"></div><br>	
+<div>
+<div>Credt Card #</div>
+<div class="Phone4"><input id = "Credit1" class="Length4"/></div><span style='float:left;'>-</span>
+<div class="Phone4"><input id = "Credit2"  class="Length4"/></div><span style='float:left;'>-</span>
+<div class="Phone4"><input id = "Credit3"  class="Length4"/></div><span style='float:left;'>-</span>
+<div class="Phone4"><input id = "Credit4"  class="Length4"/></div>
+</div>
+
+</body>
+</html>
