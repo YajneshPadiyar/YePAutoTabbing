@@ -54,7 +54,6 @@
          $(this).removeClass("YePAutoFocus");
       }
       function FocusNext(e) {
-		console.log(e.keyCode);
          var maxLen = $(this).attr("maxlength");
 		 if ($(this).val().length == Number(maxLen) && e.keyCode != 9 && e.keyCode != 16) {
             $("#" + $(this).attr("next-focus")).focus().addClass("YePAutoFocus");
